@@ -43,3 +43,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+gem 'pg'
+
+group :development, :test do
+  gem 'rspec-rails' # After bundle, run: rails generate rspec:install
+  gem 'shoulda'
+end
