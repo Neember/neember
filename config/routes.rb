@@ -3,6 +3,8 @@ Neember::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :contacts, only: [:new, :create]
+  get '/' => 'high_voltage/pages#show', id: 'home'
+  get '/who-we-are' => 'high_voltage/pages#show', id: 'who_we_are'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

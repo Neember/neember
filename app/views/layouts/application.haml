@@ -6,5 +6,9 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    .container
+    .container.top_container
+      .row
+        .topmenu
+          = render 'shared/mainmenu'
+    .container.middle_container
       = yield

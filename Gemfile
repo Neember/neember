@@ -1,4 +1,4 @@
-ruby '2.0.0'
+ruby '2.0.0' #needed by Heroku
 
 source 'https://rubygems.org'
 
@@ -6,7 +6,7 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.2'
 
 # Use sqlite3 as the database for Active Record
-# gem 'sqlite3'
+# gem 'sqlite3' #forced by Heroku
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
@@ -38,7 +38,7 @@ end
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
 # Use unicorn as the app server
-gem 'unicorn'
+gem 'unicorn' #needed by Heroku
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
@@ -46,27 +46,28 @@ gem 'unicorn'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
-gem 'pg'
-gem 'haml'
-gem 'simple_form'
-gem 'enumerize'
-gem 'bootstrap-sass', '~> 3.1.0'
+gem 'pg' #connect rails to postgres
+gem 'haml' #dry HTML
+gem 'simple_form' #support to display form faster -> ActiveRecord
+gem 'enumerize' #make database string field to array
+gem 'bootstrap-sass', '~> 3.1.0' #CSS
+gem 'high_voltage', '~> 2.1.0' #for static pages
 
 group :development, :test do
   gem 'rspec-rails' # After bundle, run: rails generate rspec:install
-  gem 'shoulda'
-  gem 'factory_girl_rails'
-  gem "awesome_print", "~> 1.2.0"
-  gem "capybara"
-  gem 'dotenv-rails'
+  gem 'shoulda' #used for model testing -> it should validate_presence_of
+  gem 'factory_girl_rails' #easy test data creation
+  gem "awesome_print", "~> 1.2.0" #just awesome
+  gem "capybara" #integration testing
+  gem 'dotenv-rails' #set ENV Variables
 end
 
 group :development do
-  gem "letter_opener"
-  gem "better_errors"
-  gem "binding_of_caller"
+  gem "letter_opener" #quick checking email
+  gem "better_errors" #display better error page on webpage
+  gem "binding_of_caller" #needed by better_errors
 end
 
 group :production do
-  gem "rails_12factor"
+  gem "rails_12factor" #needed by Heroku
 end

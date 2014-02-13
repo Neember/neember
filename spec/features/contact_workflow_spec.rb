@@ -5,7 +5,7 @@ describe 'Contact Us workflow' do
 
   it 'allow user to submit enquiry' do
     visit 'contacts/new'
-    page.should have_content "Contact Us"
+    page.should have_content "CONTACT US"
     fill_in 'Name',             with: contact.name
     fill_in 'Phone',            with: contact.phone
     choose 'Web'
