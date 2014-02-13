@@ -50,6 +50,7 @@ gem 'pg'
 gem 'haml'
 gem 'simple_form'
 gem 'enumerize'
+gem 'bootstrap-sass', '~> 3.1.0'
 
 group :development, :test do
   gem 'rspec-rails' # After bundle, run: rails generate rspec:install
@@ -62,6 +63,8 @@ end
 
 group :development do
   gem "letter_opener"
+  gem "better_errors"
+  gem "binding_of_caller"
 end
 
 group :production do

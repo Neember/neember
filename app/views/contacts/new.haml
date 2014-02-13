@@ -1,10 +1,47 @@
-%h2 Contact Us Form
+#contacts-new-container
+  .row
+    .col-md-12.page-header
+      %h1 Contact Us
 
-= simple_form_for @contact do |f|
-  = f.input :name
-  = f.input :email
-  = f.input :phone
-  = f.input :message
-  = f.input :project_category, as: :radio_buttons
-  = f.input :project_type, as: :radio_buttons
-  = f.button :submit, value: 'Send'
+  .row
+    .col-md-12.well
+      %p Get in touch with our Agile dvelopers specializing in Ruby on Rails (RoR) today.
+
+  .row
+    .col-md-6
+      %address
+        Singapore Office<br />
+        9 Jurong Town Hall Road<br />
+        iHub #01-25<br />
+        Singapore 609431<br />
+        Tel:
+        %a{href:'tel:+6566522446'}+65-6652-2446
+
+    .col-md-6
+      %address
+        Vietnam Office<br />
+        184 /15 Điện Biên Phủ,<br />
+        Ward 17, Bình Thạnh District<br />
+        Ho Chi Minh<br />
+        Tel:
+        %a{href:'tel:+84838409379'}+84-8-3840-9379
+
+  .row
+    .col-md-6
+      %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msid=214978387141265788074.0004f2464173eae79dcba&msa=0&ie=UTF8&t=m&ll=1.328776,103.741987&spn=0.007508,0.00912&z=16&output=embed'}
+    .col-md-6
+      %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msa=0&msid=214978387141265788074.0004f246526842b0724bd&ie=UTF8&t=m&ll=10.797876,106.705549&spn=0.007377,0.00912&z=16&output=embed'}
+
+  .row
+    %h3.enquiry_form_heading Enquiry Form
+
+  .row
+    .col-md-6
+      = simple_form_for @contact do |f|
+        = f.input :name
+        = f.input :email
+        = f.input :phone
+        = f.input :message
+        = f.input :project_category, as: :radio_buttons
+        = f.input :project_type, as: :radio_buttons
+        = f.button :submit, value: 'Send'
