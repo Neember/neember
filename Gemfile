@@ -49,4 +49,6 @@ gem 'pg'
 group :development, :test do
   gem 'rspec-rails' # After bundle, run: rails generate rspec:install
   gem 'shoulda'
+  gem 'factory_girl_rails'
+  gem "awesome_print", "~> 1.2.0"
 end
