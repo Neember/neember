@@ -7,6 +7,7 @@ class ContactsController < ApplicationController
     @contact = Contact.new(create_params)
 
     if @contact.save
+      ContactMailer.enquiry_email(@contact).deliver
       render :thankyou
     else
       render :new

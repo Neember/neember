@@ -22,6 +22,10 @@ describe ContactsController do
 
       it 'should save enquiry to database' do
         expect { do_request }.to change(Contact, :count).by(1)
+
+        email = ActionMailer::Base.deliveries.first
+        email.to.first.should == ENV['SALES_EMAIL']
+
         response.should render_template :thankyou
       end
     end
