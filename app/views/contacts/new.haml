@@ -1,0 +1,10 @@
+%h2 Contact Us Form
+
+= simple_form_for @contact do |f|
+  = f.input :name
+  = f.input :email
+  = f.input :phone
+  = f.input :message
+  = f.input :project_category, as: :radio_buttons
+  = f.input :project_type, as: :radio_buttons
+  = f.button :submit, value: 'Send'

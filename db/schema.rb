@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 20140212043549) do
     t.string   "name"
     t.string   "email"
     t.string   "phone"
+    t.text     "message"
     t.string   "project_category"
     t.string   "project_type"
     t.datetime "created_at"

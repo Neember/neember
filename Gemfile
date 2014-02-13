@@ -45,10 +45,14 @@ end
 # gem 'debugger', group: [:development, :test]
 
 gem 'pg'
+gem 'haml'
+gem 'simple_form'
+gem 'enumerize'
 
 group :development, :test do
   gem 'rspec-rails' # After bundle, run: rails generate rspec:install
   gem 'shoulda'
   gem 'factory_girl_rails'
   gem "awesome_print", "~> 1.2.0"
+  gem "capybara"
 end
