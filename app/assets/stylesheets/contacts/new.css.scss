@@ -7,7 +7,8 @@
     margin-bottom:20px;
 
     label.control-label{
-      @extend .col-md-3;
+      @extend .col-md-4;
+      text-transform: capitalize;
     }
 
     textarea.text,
@@ -16,7 +17,7 @@
     }
 
     label.radio{
-      @extend .col-md-4;
+      @extend .col-md-8;
       clear:left;
     }
   }

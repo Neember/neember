@@ -6,6 +6,5 @@ class Contact < ActiveRecord::Base
   validates_format_of :email, with: /\A([^@\s]+)@((?:[-a-z0-9]+\.)+[a-z]{2,})\z/i
 
   enumerize :project_category, in: [:web, :mobile, :web_and_mobile]
-  enumerize :project_type, in: [:mvp, :full, :ecommerce, :others]
+  enumerize :project_type, in: [:mvp, :ecommerce, :full, :erps, :others]
 end
-

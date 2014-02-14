@@ -6,6 +6,7 @@ en:
       web_and_mobile: "Web and Mobile"
     project_type:
       mvp: "Minimum Viable Product"
-      full: "Build Full System"
       ecommerce: "E-commerce"
+      full: "Building Complete Solution"
+      erps: "Enterprise Resource Planning System"
       others: "Others"

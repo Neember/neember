@@ -17,7 +17,7 @@ describe 'Contact Us workflow' do
     fill_in 'Email',            with: contact.email
     fill_in 'Phone',            with: contact.phone
     choose 'Web'
-    choose 'E-commerce'
+    choose 'Enterprise Resource Planning System'
     click_on 'Send'
 
     page.should have_content "Thank you"
