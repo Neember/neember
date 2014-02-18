@@ -3,6 +3,7 @@ Neember::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   resources :contacts, only: [:new, :create]
+  resources :portfolios, only: [:index]
   get '/' => 'high_voltage/pages#show', id: 'home'
   get '/who-we-are' => 'high_voltage/pages#show', id: 'who_we_are'
 
