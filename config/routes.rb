@@ -6,6 +6,8 @@ Neember::Application.routes.draw do
   resources :portfolios, only: [:index]
   get '/' => 'high_voltage/pages#show', id: 'home'
   get '/who-we-are' => 'high_voltage/pages#show', id: 'who_we_are'
+  get '/privacy-policy' => 'high_voltage/pages#show', id: 'privacy_policy'
+  get '/disclaimer' => 'high_voltage/pages#show', id: 'disclaimer'
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'

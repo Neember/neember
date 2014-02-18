@@ -1,15 +1,16 @@
 #portfolio-container
-  .rows
+  .row
     %h1 PORTFOLIOS
 
   - @portfolios.each do |portfolio|
-    .rows
-      .col-md-4
-        %a{href:"#{portfolio.url}", target:"blank"}
-          %img{src:"#{image_url("/portfolios/#{portfolio.image}")}"}
-      .col-md-8
-        %h2
+    .row
+      .portfolio
+        .image
           %a{href:"#{portfolio.url}", target:"blank"}
-            %span= portfolio.name
-        %p= portfolio.description.html_safe
-    .clearfix
+            %img{src:"#{image_url("/portfolios/#{portfolio.image}")}"}
+        .info
+          .name
+            %a{href:"#{portfolio.url}", target:"blank"}= portfolio.name
+          .description= portfolio.description.html_safe
+
+      .clearfix

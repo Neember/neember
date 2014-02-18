@@ -1,0 +1,15 @@
+#portfolio-container {
+  .portfolio {
+    .image {
+      @extend .col-md-4;
+    }
+
+    .info {
+      @extend .col-md-8;
+
+      .name {
+        @extend h2;
+      }
+    }
+  }
+}
