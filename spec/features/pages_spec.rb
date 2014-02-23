@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'static pages workflow spec' do
   it 'should show visit all static pages' do
-    visit '/' # click_on 'about-us'
+    visit '/'
     page.should have_content 'WHAT WE DO'
 
     click_on 'Who We Are'

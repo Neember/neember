@@ -1,0 +1,24 @@
+.navbar.navbar-default{role: "navigation"}
+  .container
+    .navbar-header
+      %button.navbar-toggle{"data-target" => ".navbar-responsive-collapse", "data-toggle" => "collapse", type: "button"}
+        %span.sr-only Toggle navigation
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      %a.navbar-brand{href: "index.html"}
+        %img#logo-header{alt: "Logo", src:"#{image_url('logo.png')}"}
+    .collapse.navbar-collapse.navbar-responsive-collapse
+      %ul.nav.navbar-nav.navbar-right
+        %li.dropdown
+          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/"}
+            Home
+        %li.dropdown
+          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/who-we-are"}
+            Who We Are
+        %li.dropdown
+          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/portfolios"}
+            Portfolios
+        %li.dropdown
+          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/contacts/new"}
+            Contact
