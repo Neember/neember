@@ -9,9 +9,15 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_tree .
  */
 @import 'bootstrap';
 
+@import 'global/theme';
+@import 'global/header';
+@import 'global/footer';
+@import 'global/responsive';
+@import 'global/breadcrumb';
+
 @import 'contacts/new';
 @import 'portfolios/index';
+
