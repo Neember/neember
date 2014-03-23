@@ -1,20 +1,13 @@
-#portfolio-container
-  .breadcrumbs.margin-bottom-40
-    .container
-      %h1.pull-left PORTFOLIOS
-      %ul.pull-right.breadcrumb
-        %li
-          %a{href: "/"} Home
-        %li.active Portfolios
+#portfolio-container.container
+  .row
+    .headline
+      %h2 Portfolio
 
-  .container
-    .row
+  .row
     - @portfolios.each do |portfolio|
-      .col-md-6
+      .col-md-4
         .view.view-tenth
-          %a{href:"#{portfolio.url}", target:"blank"}
-            %img{src:"#{image_url("/portfolios/#{portfolio.image}")}"}
+          %img.img-responsive{src:"#{image_url("/portfolios/#{portfolio.image}")}"}
           .mask
             %h2= portfolio.name
             %p= portfolio.description.html_safe
-            %a.info{href:"#{portfolio.url}", target:"blank"} Find Out
