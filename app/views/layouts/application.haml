@@ -9,6 +9,10 @@
     #header
       = render 'shared/header'
     #main-body.main-body
+      .breadcrumbs.margin-bottom-40
+        .container
+          %h1.pull-left= yield :page_title
+
       = yield
     #copyright
       = render 'shared/footer'
