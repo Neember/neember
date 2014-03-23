@@ -103,7 +103,7 @@
 										versionIncrement = parseFloat(version[2] || '0');
 
 									if (versionTop==1 && versionMinor < 7) {
-										container.html('<div style="text-align:center; padding:40px 0px; font-size:20px; color:#992222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');
+										container.html('<div style="text-align:center; padding:40px 0px; fonts-size:20px; color:#992222;"> The Current Version of jQuery:'+version+' <br>Please update your jQuery Version to min. 1.7 in Case you wish to use the Revolution Slider Plugin</div>');
 									}
 
 									if (versionTop>1) opt.ie=false;
@@ -3195,7 +3195,7 @@
 
 
 						//if (jQuery("body").find('#debug').length==0)
-						//		jQuery("body").append('<div id="debug" style="background:#000;z-index:1000;position:fixed;top:5px;left:5px;width:100px;height:500px;color:#fff;font-size:10px;font-family:Arial;"</div>');
+						//		jQuery("body").append('<div id="debug" style="background:#000;z-index:1000;position:fixed;top:5px;left:5px;width:100px;height:500px;color:#fff;fonts-size:10px;fonts-family:Arial;"</div>');
 
 
 						var offsetx=0;
@@ -3511,7 +3511,7 @@
 															var hh = nextcaption.data('hh');
 
 															var nc =nextcaption;
-																if (nc.data('fsize') == undefined) nc.data('fsize',parseInt(nc.css('font-size'),0) || 0);
+																if (nc.data('fsize') == undefined) nc.data('fsize',parseInt(nc.css('fonts-size'),0) || 0);
 																if (nc.data('pt') == undefined) nc.data('pt',parseInt(nc.css('paddingTop'),0) || 0);
 																if (nc.data('pb') == undefined) nc.data('pb',parseInt(nc.css('paddingBottom'),0) || 0);
 																if (nc.data('pl') == undefined) nc.data('pl',parseInt(nc.css('paddingLeft'),0) || 0);
@@ -3830,7 +3830,7 @@
 				//	-	CALCULATE THE RESPONSIVE SIZES OF THE CAPTIONS	-	  //
 				/////////////////////////////////////////////////////////////////
 				function calcCaptionResponsive(nc,opt) {
-								if (nc.data('fsize') == undefined) nc.data('fsize',parseInt(nc.css('font-size'),0) || 0);
+								if (nc.data('fsize') == undefined) nc.data('fsize',parseInt(nc.css('fonts-size'),0) || 0);
 								if (nc.data('pt') == undefined) nc.data('pt',parseInt(nc.css('paddingTop'),0) || 0);
 								if (nc.data('pb') == undefined) nc.data('pb',parseInt(nc.css('paddingBottom'),0) || 0);
 								if (nc.data('pl') == undefined) nc.data('pl',parseInt(nc.css('paddingLeft'),0) || 0);

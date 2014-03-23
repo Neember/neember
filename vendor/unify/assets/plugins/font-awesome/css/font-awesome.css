@@ -49,7 +49,7 @@
   display: inline-block;
   speak: none;
 }
-/* makes the font 33% larger relative to the icon container */
+/* makes the fonts 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
   font-size: 1.3333333333333333em;
@@ -59,7 +59,7 @@ a [class^="icon-"],
 a [class*=" icon-"] {
   display: inline;
 }
-/* increased font size for icon-large */
+/* increased fonts size for icon-large */
 [class^="icon-"].icon-fixed-width,
 [class*=" icon-"].icon-fixed-width {
   display: inline-block;

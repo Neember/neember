@@ -186,7 +186,7 @@
 
 .header .navbar a.search [class^="icon-"].icon-large,
 .header .navbar a.search [class*=" icon-"].icon-large {
-  /* increased font size for icon-large */
+  /* increased fonts size for icon-large */
   width: 1.5625em;
 }
 

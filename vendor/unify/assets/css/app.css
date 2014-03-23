@@ -467,7 +467,7 @@ li [class*=" icon-"] {
 }
 li [class^="icon-"].icon-lg,
 li [class*=" icon-"].icon-lg {
-  /* increased font size for icon-lg */
+  /* increased fonts size for icon-lg */
   width: 1.5625em;
 }
 

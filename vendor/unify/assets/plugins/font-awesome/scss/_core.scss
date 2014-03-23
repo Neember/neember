@@ -13,7 +13,7 @@
   speak: none;
 }
 
-/* makes the font 33% larger relative to the icon container */
+/* makes the fonts 33% larger relative to the icon container */
 .icon-large:before {
   vertical-align: -10%;
   font-size: (4em/3);
@@ -27,7 +27,7 @@ a {
   }
 }
 
-/* increased font size for icon-large */
+/* increased fonts size for icon-large */
 [class^="icon-"],
 [class*=" icon-"] {
   &.icon-fixed-width {
@@ -56,7 +56,7 @@ a {
   }
 }
 
-// allows usage of the hide class directly on font awesome icons
+// allows usage of the hide class directly on fonts awesome icons
 [class^="icon-"],
 [class*=" icon-"] {
   &.hide {
