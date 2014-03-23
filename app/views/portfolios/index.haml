@@ -1,8 +1,7 @@
-#portfolio-container.container
-  .row
-    .headline
-      %h2 Portfolio
+- content_for :page_title do
+  Portfolios
 
+#portfolio-container.container
   .row
     - @portfolios.each do |portfolio|
       .col-md-4
