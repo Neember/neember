@@ -4,7 +4,7 @@ Neember::Application.routes.draw do
 
   resources :contacts, only: [:new, :create]
   resources :portfolios, only: [:index]
-  get '/' => 'high_voltage/pages#show', id: 'home'
+  root 'high_voltage/pages#show', id: 'home'
   get '/who-we-are' => 'high_voltage/pages#show', id: 'who_we_are'
   get '/privacy-policy' => 'high_voltage/pages#show', id: 'privacy_policy'
   get '/disclaimer' => 'high_voltage/pages#show', id: 'disclaimer'

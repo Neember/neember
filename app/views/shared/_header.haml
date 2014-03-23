@@ -1,24 +1,17 @@
-.navbar.navbar-default{role: "navigation"}
-  .container
-    .navbar-header
-      %button.navbar-toggle{"data-target" => ".navbar-responsive-collapse", "data-toggle" => "collapse", type: "button"}
-        %span.sr-only Toggle navigation
-        %span.icon-bar
-        %span.icon-bar
-        %span.icon-bar
-      %a.navbar-brand{href: "/"}
-        %img#logo-header{alt: "Logo", src:"#{image_url('logo.png')}"}
-    .collapse.navbar-collapse.navbar-responsive-collapse
-      %ul.nav.navbar-nav.navbar-right
-        %li.dropdown
-          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/"}
-            Home
-        %li.dropdown
-          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/who-we-are"}
-            Who We Are
-        %li.dropdown
-          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/portfolios"}
-            Portfolios
-        %li.dropdown
-          %a.dropdown-toggle{"data-close-others" => "false", "data-delay" => "0", "data-hover" => "", "data-toggle" => "", href: "/contacts/new"}
-            Contact
+#header.header
+  .navbar.navbar-default
+    .container
+      .navbar-header
+        %a.navbar-brand{href: root_path}
+          %img#logo{alt: 'Neember', src:"#{image_url('neember-logo.png')}"}
+
+      .main-menu.collapse.navbar-collapse.navbar-responsive-collapse
+        %ul.nav.navbar-nav.navbar-right
+          %li{class: get_active_class(root_path)}
+            %a{href: root_path} Home
+          %li{class: get_active_class('/who-we-are')}
+            %a{href: "/who-we-are"} Who We Are
+          %li{class: get_active_class('/portfolios')}
+            %a{href: '/portfolios'} Portfolios
+          %li{class: get_active_class('/contacts/new')}
+            %a{href: '/contacts/new'} Contact
