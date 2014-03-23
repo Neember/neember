@@ -2,6 +2,7 @@
 // This file controls all the @import of unify template as we do not need everything from the template
 
 // Basic compulsory CSS
-@import 'unify/unify/style.css';
-@import 'unify/unify/headers/header1.css';
-@import 'unify/unify/responsive.css';
+@import 'unify/unify/style';
+@import 'unify/unify/headers/header1';
+@import 'unify/unify/responsive';
+@import 'unify/unify/themes/default';
