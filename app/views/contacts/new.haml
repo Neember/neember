@@ -1,47 +1,122 @@
 #contacts-new-container
-  .row
-    .col-md-12.page-header
-      %h1 CONTACT US
+  .container
+    .row
+      .col-md-12.headline
+        %h2 CONTACT US
 
-  .row
-    .col-md-12.well
-      %p Get in touch with our Agile dvelopers specializing in Ruby on Rails (RoR) today.
+    .row
+      .col-md-6
+        %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msid=214978387141265788074.0004f2464173eae79dcba&msa=0&ie=UTF8&t=m&ll=1.328776,103.741987&spn=0.007508,0.00912&z=16&output=embed'}
+      .col-md-6
+        %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msa=0&msid=214978387141265788074.0004f246526842b0724bd&ie=UTF8&t=m&ll=10.797876,106.705549&spn=0.007377,0.00912&z=16&output=embed'}
 
-  .row
-    .col-md-6
-      %address
-        Singapore Office<br />
-        9 Jurong Town Hall Road<br />
-        iHub #01-25<br />
-        Singapore 609431<br />
-        Tel:
-        %a{href:'tel:+6566522446'}+65-6652-2446
+    .row
+      .col-md-6
+        %ul.list-unstyled.who
+          %li
+            %a
+              %i.icon-home
+              Singapore Office<br />
+              9 Jurong Town Hall Road<br />
+              iHub #01-25<br />
+              Singapore 609431<br />
+          %li
+            %a
+              %i.icon-envelope-alt
+              sales at neember dot com
+          %li
+            %a{href:'tel:+6566522446'}
+              %i.icon-phone-sign
+              +65-6652-2446
 
-    .col-md-6
-      %address
-        Vietnam Office<br />
-        184 /15 Điện Biên Phủ,<br />
-        Ward 17, Bình Thạnh District<br />
-        Ho Chi Minh<br />
-        Tel:
-        %a{href:'tel:+84838409379'}+84-8-3840-9379
+      .col-md-6
+        %ul.list-unstyled.who
+          %li
+            %a
+              %i.icon-home
+              Vietnam Office<br />
+              184 /15 Điện Biên Phủ,<br />
+              Ward 17, Bình Thạnh District<br />
+              Ho Chi Minh<br />
+          %li
+            %a
+              %i.icon-envelope-alt
+              sales at neember dot com
+          %li
+            %a{href:'tel:+84838409379'}
+              %i.icon-phone-sign
+              +84-8-3840-9379
 
-  .row
-    .col-md-6
-      %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msid=214978387141265788074.0004f2464173eae79dcba&msa=0&ie=UTF8&t=m&ll=1.328776,103.741987&spn=0.007508,0.00912&z=16&output=embed'}
-    .col-md-6
-      %iframe{width:'425', height:'350', frameborder:'0', scrolling:'no', src:'https://maps.google.com/maps/ms?msa=0&msid=214978387141265788074.0004f246526842b0724bd&ie=UTF8&t=m&ll=10.797876,106.705549&spn=0.007377,0.00912&z=16&output=embed'}
+    .row
+      .headline
+        %h2 Enquiry Form
+      %p Get in touch with our Agile developers specializing in Ruby on Rails (RoR) today.
 
-  .row
-    %h2.enquiry_form_heading Enquiry Form
+    .row.margin-bottom-30
+      .col-md-12
+        = form_for @contact do |f|
+          - if @contact.errors.any?
+            .alert.alert-danger
+              There are errors with your inputs:
+              %ul
+                - @contact.errors.full_messages.each do |message|
+                  %li= message
+          .form-group
+            = f.label :name
+            = f.text_field :name, class: 'form-control'
 
-  .row
-    .col-md-6
-      = simple_form_for @contact do |f|
-        = f.input :name
-        = f.input :email
-        = f.input :phone
-        = f.input :message
-        = f.input :project_category, as: :radio_buttons, label: 'I need it on'
-        = f.input :project_type, as: :radio_buttons
-        = f.button :submit, value: 'Send'
+          .form-group
+            = f.label :email
+            = f.email_field :email, class: 'form-control'
+            
+          .form-group
+            = f.label :phone
+            = f.telephone_field :phone, class: 'form-control'
+
+          .form-group
+            = f.label :message
+            = f.text_area :message, class: 'form-control', size: '60x6'
+
+          .form-group
+            .col-md-3
+              %label Project Platforms
+            .col-md-9
+              .radio
+                %label
+                  = f.radio_button :project_category, 'web_and_mobile'
+                  Web and mobile
+              .radio
+                %label
+                  = f.radio_button :project_category, 'web'
+                  Web
+              .radio
+                %label
+                  = f.radio_button :project_category, 'mobile'
+                  Mobile
+
+          .form-group
+            .col-md-3
+              %label Project Type
+            .col-md-9
+              .radio
+                %label
+                  = f.radio_button :project_type, 'mvp'
+                  Minimum Viable Product
+              .radio
+                %label
+                  = f.radio_button :project_type, 'ecommerce'
+                  E-Commerce
+              .radio
+                %label
+                  = f.radio_button :project_type, 'full'
+                  Full system
+              .radio
+                %label
+                  = f.radio_button :project_type, 'erps'
+                  Enterprise Resource Planning System (ERPS)
+              .radio
+                %label
+                  = f.radio_button :project_type, 'others'
+                  Others
+
+            = f.submit 'Send Message', class: 'btn-u'
