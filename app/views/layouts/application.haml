@@ -6,9 +6,9 @@
     = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
   %body
-    .header
+    #header
       = render 'shared/header'
-    .center
+    #main-body.main-body
       = yield
-    .footer
+    #copyright
       = render 'shared/footer'
