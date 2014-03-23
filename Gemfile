@@ -60,6 +60,7 @@ group :development, :test do
   gem "awesome_print", "~> 1.2.0" #just awesome
   gem "capybara" #integration testing
   gem 'dotenv-rails' #set ENV Variables
+  gem 'nyan-cat-formatter'
 end
 
 group :development do
