@@ -3,9 +3,11 @@
     .row
       .col-md-9
         %p.copyright-space
-          2014 © Neember. ALL Rights Reserved.
-      .col-md-3
-        %p.copyright-space
+          != "#{Date.today.year} &copy; Neember Agile Coding - "
+          All rights reserved
+          %i (and all wrongs reversed!)
+      .col-md-3.pull-right
+        %p.copyright-space.pull-right
           %a{href: "/privacy-policy"} Privacy Policy
           |
           %a{href: "/disclaimer"} Disclaimer
