@@ -1,8 +1,24 @@
 .layer_slider
   #layerslider-container-fw
     #layerslider{:style => "width: 100%; height: 500px; margin: 0px auto; "}
+      / Third Slide
+      .ls-layer.freedom-software{:style=>"slidedirection:right;transition2d:92,93,105;"}
+        %img.ls-bg{:alt => "Slide background", :src => "/sliders/freedom-software-bkgrd.jpg"}
+        %span.punchline.ls-s-1{:style=>"top:150px;left:50px;slidedirection:top;slideoutdirection:bottom;durationin:1000;durationout:1000;"}
+          FREEDOM
+          %br
+          SOFTWARE
+          %br
+          DESIGN
+        %span.test.ls-s-1{:style=>"top:300px;left:50px;slidedirection:left;slideoutdirection:top;durationin:3000;durationout:2000;"}
+          TEST
+        %span.adapt.ls-s-1{:style=>"top:300px;left:140px;slidedirection:left;slideoutdirection:right;durationin:3000;durationout:2000;"}
+          ADAPT
+        %span.evolve.ls-s-1{:style=>"top:300px;left:270px;slidedirection:left;slideoutdirection:left;durationin:3000;durationout:2000;"}
+          EVOLVE
+      / End Third Slide
       / Why walk that path slide
-      .ls-layer.why-walk-that-path{:style => "slidedirection: top;slidedelay:5000;"}
+      .ls-layer.why-walk-that-path{:style=>"slidedirection:top;transition2d:92,93,105;slidedelay:5000;"}
         %img.ls-bg{:alt => "Slide background", :src => "/sliders/why-walk-that-path-bkgrd.png"}
         %span.text.ls-s-2{:style=>"top:100px;slidedirection:top;slideoutdirection:bottom;durationin:1500;durationout:1500;"}
           PROJECTS FAIL
@@ -14,17 +30,6 @@
           WHY WALK THAT PATH?
         %img.think-different.ls-s-1{:alt=>"Why Walk That Path",:src=>"/sliders/think-different.png",:style=>"top:30px;left:600px;slidedirection:right;slideoutdirection:bottom;durationin:3500;durationout:1000;"}
       / End Why walk that path slide
-      / Third Slide
-      .ls-layer{:style => "slidedirection: right; transition2d: 92,93,105; "}
-        %img.ls-bg{:alt => "Slide background", :src => "/img/sliders/layer/bg2.jpg"}
-          %span.ls-s-1{:style => " color: #777; line-height:45px; font-weight: 200; font-size: 35px; top:100px; left: 50px; slidedirection : top; slideoutdirection : bottom; durationin : 1000; durationout : 1000; "}
-            Unify is Fully Responsive
-            %br
-              Twitter Bootstrap 3 Template
-          %a.btn-u.btn-u-green.ls-s-1{:href => "#", :style => " padding: 9px 20px; font-size:25px; top:220px; left: 50px; slidedirection : bottom; slideoutdirection : bottom; durationin : 2000; durationout : 2000; "}
-            Find Out More
-          %img.ls-s-1{:alt => "Slider Image", :src => "/img/mockup/iphone.png", :style => " top:30px; left: 670px; slidedirection : right; slideoutdirection : bottom; durationin : 3000; durationout : 3000; "}
-      / End Third Slide
 / /layer_slider
 :javascript
   $(document).ready(function(){

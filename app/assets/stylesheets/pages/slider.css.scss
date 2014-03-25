@@ -1,8 +1,8 @@
 .layer_slider {
-  .why-walk-that-path  {
-    font-family: 'santana-blackregular';
-    font-weight: bold; 
+  font-family: 'santana-blackregular';
+  font-weight: bold; 
     
+  .why-walk-that-path  {
     .text {
       left: 0;
       color: #1dc3c5; 
@@ -13,6 +13,28 @@
       left: 0;
       color: #ef007c; 
       font-size: 40px;
+    }
+  }
+
+  .freedom-software {
+    font-size: 35px;
+
+    .punchline {
+      color: #fff;
+      font-size: 50px;
+      line-height: 80%;
+    }
+
+    .test {
+      color: #ef007c;
+    }
+
+    .adapt {
+      color: #b5ff02;
+    }
+
+    .evolve {
+      color: #1dc3c5;
     }
   }
 }
