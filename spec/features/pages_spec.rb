@@ -6,19 +6,19 @@ describe 'static pages workflow spec' do
     page.should have_content 'WHAT WE DO'
 
     click_on 'Who We Are'
-    page.should have_content 'WHO WE ARE'
+    page.should have_content 'Who We Are'
 
     click_on 'Contact'
-    page.should have_content 'CONTACT US'
+    page.should have_content 'Contact Us'
 
     click_on 'Portfolios'
-    page.should have_content 'PORTFOLIOS'
+    page.should have_content 'Portfolios'
 
     click_on 'Privacy Policy'
-    page.should have_content 'PRIVACY POLICY'
+    page.should have_content 'Privacy Policy'
 
     click_on 'Disclaimer'
-    page.should have_content 'DISCLAIMER'
+    page.should have_content 'Disclaimer'
 
   end
 end
