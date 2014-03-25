@@ -1,25 +1,21 @@
 .layer_slider
   #layerslider-container-fw
-    #layerslider{:style => "width: 100%; height: 500px; margin: 0px auto; "}
-      / Third Slide
-      .ls-layer.freedom-software{:style=>"slidedirection:right;transition2d:92,93,105;"}
-        %img.ls-bg{:alt => "Slide background", :src => "/sliders/freedom-software-bkgrd.jpg"}
-        %span.punchline.ls-s-1{:style=>"top:150px;left:50px;slidedirection:top;slideoutdirection:bottom;durationin:1000;durationout:1000;"}
-          FREEDOM
-          %br
-          SOFTWARE
-          %br
-          DESIGN
-        %span.test.ls-s-1{:style=>"top:300px;left:50px;slidedirection:left;slideoutdirection:top;durationin:3000;durationout:2000;"}
-          TEST
-        %span.adapt.ls-s-1{:style=>"top:300px;left:140px;slidedirection:left;slideoutdirection:right;durationin:3000;durationout:2000;"}
-          ADAPT
-        %span.evolve.ls-s-1{:style=>"top:300px;left:270px;slidedirection:left;slideoutdirection:left;durationin:3000;durationout:2000;"}
-          EVOLVE
-      / End Third Slide
+    #layerslider{:style => "width: 100%; height: 400px; margin: 0px auto; "}
+      / Real Feedback
+      .ls-layer.real-feedback{:style=>"slidedirection:right;transition2d:92,93,105;background-color:#d7df32"}
+        %img.real-users.ls-s-1{:alt=>"Real Users Feedbacks",:src=>"/sliders/real-users.gif",:style=>"top:51px;left:0;slidedirection:left;slideoutdirection:bottom;durationin:1000;durationout:1000;"}
+        %img.circle-bkgrd.ls-s-1{:alt=>"Circle Background",:src=>"/sliders/circle-bkgrd.gif",:style=>"top:50px;left:600px;slidedirection:bottom;slideoutdirection:bottom;durationin:1000;durationout:1000;"}
+        %span.build-text.ls-s-1{:style=>"top:200px;left:680px;slidedirection:bottom;slideoutdirection:bottom;durationin:2000;durationout:1000;"}
+          BUILD WHAT
+        %span.think-text.ls-s-1{:style=>"top:250px;left:680px;slidedirection:bottom;slideoutdirection:bottom;durationin:2000;durationout:1000;"}
+          YOU THINK
+        %span.users-text.ls-s-1{:style=>"top:290px;left:680px;slidedirection:bottom;slideoutdirection:bottom;durationin:2000;durationout:1000;"}
+          YOUR USERS NEED
+        %span.strikethrough.ls-s-1{:style=>"top:270px;left:680px;slidedirection:right;slideoutdirection:bottom;delayin:2000;durationin:500;durationout:500;"}
+      / End Real Feedback
       / Why walk that path slide
       .ls-layer.why-walk-that-path{:style=>"slidedirection:top;transition2d:92,93,105;slidedelay:5000;"}
-        %img.ls-bg{:alt => "Slide background", :src => "/sliders/why-walk-that-path-bkgrd.png"}
+        %img.ls-bg{:alt => "Why Walk That Path", :src => "/sliders/why-walk-that-path-bkgrd.png"}
         %span.text.ls-s-2{:style=>"top:100px;slidedirection:top;slideoutdirection:bottom;durationin:1500;durationout:1500;"}
           PROJECTS FAIL
         %span.text.ls-s-2{:style=>"top:140px;slidedirection:top;slideoutdirection:bottom;durationin:1500;durationout:1500;"}
@@ -28,8 +24,24 @@
           ARE AT THE END OF DEVELOPMENT
         %span.punchline.ls-s-2{:style=>"top:250px;slidedirection:right;slideoutdirection:right;durationin:3500;durationout:3500;"}
           WHY WALK THAT PATH?
-        %img.think-different.ls-s-1{:alt=>"Why Walk That Path",:src=>"/sliders/think-different.png",:style=>"top:30px;left:600px;slidedirection:right;slideoutdirection:bottom;durationin:3500;durationout:1000;"}
+        %img.think-different.ls-s-1{:alt=>"Why Walk That Path",:src=>"/sliders/think-different.png",:style=>"top:10px;left:600px;slidedirection:right;slideoutdirection:bottom;durationin:3500;durationout:1000;"}
       / End Why walk that path slide
+      / Freedom Software
+      .ls-layer.freedom-software{:style=>"slidedirection:right;transition2d:92,93,105;"}
+        %img.ls-bg{:alt => "Freedom Software Design", :src => "/sliders/freedom-software-bkgrd.jpg"}
+        %span.punchline.ls-s-1{:style=>"top:50px;left:50px;slidedirection:top;slideoutdirection:bottom;durationin:1000;durationout:1000;"}
+          FREEDOM
+          %br
+          SOFTWARE
+          %br
+          DESIGN
+        %span.test.ls-s-1{:style=>"top:200px;left:50px;slidedirection:left;slideoutdirection:top;durationin:3000;durationout:2000;"}
+          TEST
+        %span.adapt.ls-s-1{:style=>"top:200px;left:140px;slidedirection:left;slideoutdirection:right;durationin:3000;durationout:2000;"}
+          ADAPT
+        %span.evolve.ls-s-1{:style=>"top:200px;left:270px;slidedirection:left;slideoutdirection:left;durationin:3000;durationout:2000;"}
+          EVOLVE
+      / End Freedom Software
 / /layer_slider
 :javascript
   $(document).ready(function(){

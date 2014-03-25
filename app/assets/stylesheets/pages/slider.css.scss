@@ -1,6 +1,29 @@
 .layer_slider {
   font-family: 'santana-blackregular';
   font-weight: bold; 
+
+  .real-feedback {
+    .build-text {
+      color: #fff;
+      font-size: 50px;
+    }
+
+    .think-text {
+      color: #a6e4e5;
+      font-size: 40px;
+      font-style: italic;
+    }
+
+    .strikethrough {
+      border-bottom: 4px solid #a6e4e5;
+      width: 250px;
+    }
+    
+    .users-text {
+      color: #ebff46;
+      font-size: 40px;
+    }
+  }
     
   .why-walk-that-path  {
     .text {
