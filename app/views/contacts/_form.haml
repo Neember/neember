@@ -1,0 +1,66 @@
+= form_for @contact do |f|
+  - if @contact.errors.any?
+    .alert.alert-danger
+      There are errors with your inputs:
+      %ul
+        - @contact.errors.full_messages.each do |message|
+          %li= message
+  .form-group
+    = f.label :name
+    = f.text_field :name, class: 'form-control'
+
+  .form-group
+    = f.label :email
+    = f.email_field :email, class: 'form-control'
+    
+  .form-group
+    = f.label :phone
+    = f.telephone_field :phone, class: 'form-control'
+
+  .form-group
+    = f.label :message
+    = f.text_area :message, class: 'form-control', size: '60x6'
+
+  .form-group
+    .col-md-3
+      %label Project Platforms
+    .col-md-9
+      .radio
+        %label
+          = f.radio_button :project_category, 'web_and_mobile'
+          Web and Mobile
+      .radio
+        %label
+          = f.radio_button :project_category, 'web'
+          Web
+      .radio
+        %label
+          = f.radio_button :project_category, 'mobile'
+          Mobile
+
+  .form-group
+    .col-md-3
+      %label Project Type
+    .col-md-9
+      .radio
+        %label
+          = f.radio_button :project_type, 'mvp'
+          Minimum Viable Product
+      .radio
+        %label
+          = f.radio_button :project_type, 'ecommerce'
+          E-Commerce
+      .radio
+        %label
+          = f.radio_button :project_type, 'full'
+          Full system
+      .radio
+        %label
+          = f.radio_button :project_type, 'erps'
+          Enterprise Resource Planning System (ERPS)
+      .radio
+        %label
+          = f.radio_button :project_type, 'others'
+          Others
+
+    = f.submit 'Send Message', class: 'btn-u'
