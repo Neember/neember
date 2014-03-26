@@ -2,4 +2,36 @@
   .who-we-are {
     margin-bottom: 40px;
   }
+
+  .why-neember {
+    .relationship {
+      h3 {
+        color: #e74c3c;
+      }
+    }
+
+    .tdd {
+      h3 {
+        color: #72c02c;
+      }
+    }
+
+    .agile {
+      h3 {
+        color: #3498db;
+      }
+    }
+
+    .lean {
+      h3 {
+        color: #e67e22;
+      }
+    }
+    
+    .tradition {
+      h3 {
+        color: #666;
+      }
+    }
+  }
 }
