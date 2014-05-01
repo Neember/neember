@@ -2,3 +2,8 @@ body {
   font-family: 'Asap', sans-serif;
   font-size: 15px;
 }
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+

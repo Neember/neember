@@ -16,6 +16,17 @@
             %a{href: root_path} Home
           %li{class: get_active_class('/who-we-are')}
             %a{href: "/who-we-are"} Who We Are
+          %li.dropdown
+            %a.dropdown-toggle{'data-toggle'=>'dropdown','data-hover'=>'dropdown','data-delay'=>'0','data-close-others'=>'false'} Services
+            %ul.dropdown-menu
+              %li
+                %a{href: '/services/agile-ecommerce'} E-commerce
+              %li
+                %a{href: '/services/mobile-app'} Mobile App
+              %li
+                %a{href: '/services/startup'} Startup
+              %li
+                %a{href: '/services/web-app'} Web Application
           %li{class: get_active_class('/portfolios')}
             %a{href: '/portfolios'} Portfolios
           %li{class: get_active_class('/contacts/new')}
