@@ -6,6 +6,10 @@ Neember::Application.routes.draw do
   resources :portfolios, only: [:index]
   root 'high_voltage/pages#show', id: 'home'
   get '/who-we-are' => 'high_voltage/pages#show', id: 'who_we_are'
+  get '/services/agile-ecommerce' => 'high_voltage/pages#show', id: 'agile_ecommerce'
+  get '/services/mobile-app' => 'high_voltage/pages#show', id: 'mobile_app'
+  get '/services/startup' => 'high_voltage/pages#show', id: 'start_up'
+  get '/services/web-app' => 'high_voltage/pages#show', id: 'web_app'
   get '/privacy-policy' => 'high_voltage/pages#show', id: 'privacy_policy'
   get '/disclaimer' => 'high_voltage/pages#show', id: 'disclaimer'
 
