@@ -10,6 +10,7 @@ Neember::Application.routes.draw do
   get '/services/mobile-app' => 'high_voltage/pages#show', id: 'mobile_app'
   get '/services/startup' => 'high_voltage/pages#show', id: 'start_up'
   get '/services/web-app' => 'high_voltage/pages#show', id: 'web_app'
+  get '/our-approach' => 'high_voltage/pages#show', id: 'our_approach'
   get '/privacy-policy' => 'high_voltage/pages#show', id: 'privacy_policy'
   get '/disclaimer' => 'high_voltage/pages#show', id: 'disclaimer'
 
